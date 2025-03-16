@@ -16,8 +16,7 @@
     <!-- Tailwind custom code -->
     <style type="text/tailwindcss">
       @theme {
-        --color-header-gradient-first: rgba(255, 255, 255, 1);
-        --color-header-gradient-second: rgba(255, 255, 255, 0);
+        --color-main-bg: #f4f4f4;
       }
     </style>
     <!-- Font-Awesome CDN -->
@@ -85,6 +84,7 @@
             </button>
           </div>
 
+          <!-- Dropdown menu -->
           <div class="lg:hidden">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -107,16 +107,18 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0"
               >
-                <li><a>Homepage</a></li>
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
                 <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
       <!-- Banner -->
-      <div class="flex flex-col justify-center items-center gap-6">
+      <div class="flex flex-col justify-center items-center gap-6 px-5">
         <!-- Image content-->
         <div class="max-w-[572px]">
           <img src="assets/banner.png" class="w-full" alt="" />
@@ -144,5 +146,118 @@
         </div>
       </div>
     </header>
+    <!-- Main Section Start -->
+    <main class="w-full bg-main-bg">
+      <!-- About Section -->
+      <section class="container mx-auto py-24">
+        <div class="lg:px-12 px-5">
+          <div class="flex flex-col md:flex-row-reverse items-center gap-9">
+            <!-- Image -->
+            <div class="md:w-1/2">
+              <img src="assets/Rectangle.png" class="w-full rounded-2xl" />
+            </div>
+            <!-- Text -->
+            <div class="md:w-1/2 relative">
+              <!-- Absolute vector -->
+              <div class="absolute -top-14 -left-12 hidden lg:block">
+                <img src="assets/Vector.png" alt="" />
+              </div>
+              <!-- btn -->
+              <button class="btn rounded-3xl mb-4">
+                <span><i class="fa-solid fa-arrow-right"></i></span>About Us
+              </button>
+              <h1 class="text-xl md:text-4xl lg:text-5xl font-bold mb-6">
+                We design thoughtful, liveable spaces
+              </h1>
+              <p class="max-w-[600px] mb-5">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <!-- cards -->
+              <div class="space-y-5">
+                <!-- Card 01 -->
+                <div
+                  class="max-w-[600px] flex items-center gap-6 bg-base-100 shadow-sm rounded-3xl p-6"
+                >
+                  <!-- Image -->
+                  <div>
+                    <img
+                      src="assets/commercial.png"
+                      alt="Movie"
+                      class="max-w-16"
+                    />
+                  </div>
+                  <!-- Text -->
+                  <div>
+                    <h2 class="font-bold text-xl mb-3">Commercial</h2>
+                    <p>
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 02 -->
+                <div
+                  class="max-w-[600px] flex items-center gap-6 bg-base-100 shadow-sm rounded-3xl p-6"
+                >
+                  <!-- Image -->
+                  <div>
+                    <img
+                      src="assets/residential.png"
+                      alt="Movie"
+                      class="max-w-16"
+                    />
+                  </div>
+                  <!-- Text -->
+                  <div>
+                    <h2 class="font-bold text-xl mb-3">Residential</h2>
+                    <p>
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Count Section -->
+      <section class="container mx-auto px-5 py-8 md:p-8">
+        <!-- cards -->
+        <div
+          class="bg-white rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <!-- card 01 -->
+          <div class="flex flex-col items-center p-6">
+            <img src="assets/icons/message.png" class="w-10 mb-3" alt="" />
+            <h3 class="text-4xl font-extrabold mb-3 text-stone-600">253+</h3>
+            <h4>Happy Client Review</h4>
+          </div>
+
+          <!-- card 02 -->
+          <div class="flex flex-col items-center p-6">
+            <img src="assets/icons/department.png" class="w-10 mb-3" alt="" />
+            <h3 class="text-4xl font-extrabold mb-3 text-stone-600">50+</h3>
+            <h4>Work Departments</h4>
+          </div>
+
+          <!-- card 03 -->
+          <div class="flex flex-col items-center p-6">
+            <img src="assets/icons/clients.png" class="w-10 mb-3" alt="" />
+            <h3 class="text-4xl font-extrabold mb-3 text-stone-600">30K+</h3>
+            <h4>Our Happy Client</h4>
+          </div>
+
+          <!-- card 04 -->
+          <div class="flex flex-col items-center p-6">
+            <img src="assets/icons/staff.png" class="w-10 mb-3" alt="" />
+            <h3 class="text-4xl font-extrabold mb-3 text-stone-600">307+</h3>
+            <h4>Staff Members</h4>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
