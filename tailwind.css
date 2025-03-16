@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@theme {
+  --color-rinterio-btn-bg: #abef5f;
+  --color-header-gradient-first: rgba(255, 255, 255, 1);
+  --color-header-gradient-second: rgba(255, 255, 255, 1);
+}
