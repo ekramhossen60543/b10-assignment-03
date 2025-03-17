@@ -50,6 +50,7 @@
       <!-- Navbar -->
       <nav class="my-12">
         <div class="navbar flex justify-between items-center">
+          <!-- Brand Name -->
           <div>
             <a class="btn btn-ghost text-3xl font-extrabold"
               ><span
@@ -83,7 +84,7 @@
               <span
                 class="w-8 h-8 flex justify-center items-center bg-stone-900 rounded-full"
               >
-                <i class="fa-solid fa-arrow-right text-white"></i>
+                <i class="fa-solid fa-arrow-right text-white -rotate-45"></i>
               </span>
             </button>
           </div>
@@ -142,7 +143,7 @@
           <button class="btn rounded-3xl bg-lime-200 px-5 py-5 ml-2 text-xl">
             <a href=""> Book Consult </a>
             <span
-              class="w-8 h-8 flex justify-center items-center bg-lime-500 rounded-full"
+              class="w-8 h-8 flex justify-center items-center bg-lime-300 rounded-full"
             >
               <i class="fa-solid fa-arrow-right -rotate-45"></i>
             </span>
@@ -181,7 +182,7 @@
                 accents.
               </p>
               <!-- cards -->
-              <div class="space-y-5 md:flex gap-6">
+              <div class="space-y-5 md:flex lg:flex-col gap-6">
                 <!-- Card 01 -->
                 <div
                   class="max-w-[600px] max-h-[128px] flex items-center gap-6 bg-base-100 shadow-sm rounded-3xl p-6"
@@ -280,7 +281,7 @@
           </p>
         </div>
         <!-- cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-5">
           <!-- card 01 -->
           <div class="bg-work-bg-1 px-6 py-10 rounded-2xl">
             <img src="assets/icons/concept.png" class="w-12 mb-3" alt="" />
@@ -324,8 +325,8 @@
       </section>
       <!-- Portfolio Section -->
       <section class="w-full bg-white py-24">
-        <!-- Wrapper -->
-        <div class="container mx-auto">
+        <!-- Container -->
+        <div class="container mx-auto px-5 md:px-0">
           <!-- Text -->
           <div class="max-w-[678px] mx-auto text-center mb-8">
             <button class="btn px-5 py-3 border-0 bg-lime-100 rounded-3xl mb-4">
@@ -430,7 +431,7 @@
       <!-- Article and News Section -->
       <section class="w-full py-24">
         <!-- Container -->
-        <div class="container mx-auto">
+        <div class="container mx-auto px-5 md:px-0">
           <!-- Text -->
           <div class="max-w-[678px] mx-auto text-center mb-8">
             <button class="btn px-5 py-3 border-0 bg-lime-100 rounded-3xl mb-4">
@@ -450,10 +451,11 @@
           </div>
 
           <!-- cards -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
             <!-- card 01 -->
-
-            <div class="bg-white rounded-2xl p-6">
+            <div
+              class="bg-white md:flex md:gap-6 lg:flex-col lg:gap-0 rounded-2xl p-6"
+            >
               <!-- Image -->
               <div class="mb-4">
                 <img src="assets/article1.png" class="w-full" alt="" />
@@ -499,7 +501,9 @@
             </div>
 
             <!-- card 02 -->
-            <div class="bg-white rounded-2xl p-6">
+            <div
+              class="bg-white md:flex md:gap-6 lg:flex-col lg:gap-0 rounded-2xl p-6"
+            >
               <!-- Image -->
               <div class="mb-4">
                 <img src="assets/article2.png" class="w-full" alt="" />
@@ -545,7 +549,9 @@
             </div>
 
             <!-- card 03 -->
-            <div class="bg-white rounded-2xl p-6">
+            <div
+              class="bg-white md:flex md:gap-6 lg:flex-col lg:gap-0 rounded-2xl p-6"
+            >
               <!-- Image -->
               <div class="mb-4">
                 <img src="assets/article3.png" class="w-full" alt="" />
@@ -592,6 +598,113 @@
           </div>
         </div>
       </section>
+
+      <!-- Let's Contact Section -->
+      <section class="w-full py-24 bg-[url(../assets/bg.jpg)]">
+        <!-- container -->
+        <div class="container mx-auto px-5 md:px-0">
+          <!-- Text -->
+          <div class="max-w-[678px] mx-auto text-center mb-8">
+            <button class="btn px-5 py-3 border-0 bg-lime-100 rounded-3xl mb-4">
+              <a href=""
+                ><span><i class="fa-solid fa-arrow-right mr-2"></i></span>Let's
+                Connect</a
+              >
+            </button>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
+              Let’s Discuss Next Project
+            </h3>
+            <p class="text-gray-700 text-base font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- Form -->
+          <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="w-full input border-0 bg-white rounded-3xl"
+            />
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="w-full input border-0 bg-white rounded-3xl"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number*"
+              class="w-full input border-0 bg-white rounded-3xl"
+            />
+            <input
+              type="email"
+              placeholder="Email Address*"
+              class="w-full input border-0 bg-white rounded-3xl"
+            />
+            <textarea
+              class="w-full h-[240px] textarea md:col-span-2 border-0 bg-white rounded-3xl"
+              placeholder="Write your message here"
+            ></textarea>
+            <button
+              class="w-full md:col-span-2 btn border-0 rounded-3xl bg-lime-400 text-xl font-extrabold"
+            >
+              Send Mail
+              <span
+                class="w-8 h-8 rounded-full bg-stone-900 flex justify-center items-center"
+              >
+                <i class="fa-solid fa-arrow-right text-white -rotate-45"></i
+              ></span>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
+    <!-- Footer Section -->
+    <footer class="w-full bg-stone-900 py-20">
+      <!-- container -->
+      <div class="max-w-[776px] mx-auto flex flex-col items-center">
+        <!-- Text -->
+        <div class="max-w-[678px] mx-auto text-center mb-8">
+          <div class="mb-4">
+            <a class="btn btn-ghost text-3xl font-extrabold text-white"
+              ><span
+                class="w-8 h-8 bg-lime-400 rounded-full flex items-center justify-center"
+                ><i
+                  class="fa-solid fa-arrow-right -rotate-45 text-xl text-black"
+                ></i></span
+              >Rinterio</a
+            >
+          </div>
+          <p class="text-[#737373] text-base font-medium">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Menubar -->
+        <div class="lg:block mb-8">
+          <ul
+            class="flex flex-col gap-y-5 md:flex-row md:gap-x-[80px] lg:gap-x-[100px] text-[#CCCCCC]"
+          >
+            <li><a class="font-bold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- btn -->
+        <button
+          class="w-[311px] md:w-[212px] md:col-span-2 btn border-0 rounded-3xl bg-lime-400 text-xl font-extrabold"
+        >
+          Book Consult
+          <span
+            class="w-8 h-8 rounded-full bg-stone-900 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-arrow-right text-white -rotate-45"></i
+          ></span>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
